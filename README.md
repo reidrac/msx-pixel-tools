@@ -19,7 +19,7 @@ The expected colours are those of the Thoshiba palette. See
 [this file](https://github.com/reidrac/8-bit-gimp-palettes/blob/master/MSX.gpl) for
 further info about the RGB values.
 
-When the output is a C include file, it is wrapped and `ifdef` block with a
+When the output is a C include file, it is wrapped in an `ifdef` block with a
 `LOCAL` define to specify when the data is extern or not.
 
 ```C
