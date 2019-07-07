@@ -30,7 +30,7 @@ When the output is a C include file, it is wrapped and `ifdef` block with a
 
 ...
 /* in any other file */
-#include "sprite.h"
+#include "sprites.h"
 ```
 
 The ASM output can be easily modified in case your assambler doesn't support the
