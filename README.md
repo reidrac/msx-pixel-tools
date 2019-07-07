@@ -1,8 +1,8 @@
-# MSX Pixel tools
+# MSX Pixel Tools
 
-These are two simple tools I used to make [Night Knight](https://www.usebox.net/jjm/night-knight/).
+These are few simple tools I used to make [Night Knight](https://www.usebox.net/jjm/night-knight/).
 
-Convert PNG images into sprites and tilesets to be used by the MSX.
+Convert PNG images into sprites and tilesets to be used by the MSX in screen 2 mode.
 
 * `png2sprites.py`
 * `png2tileset.py`
@@ -10,7 +10,7 @@ Convert PNG images into sprites and tilesets to be used by the MSX.
 
 Each tool has help in the `CLI` with `-h`.
 
-The output is dumped in `stdout`, so redirect it to a file:
+The output is dumped in `stdout`, so you can redirect it to a file:
 ```
 ./png2sprites.py examples/sprites.png > sprites.h
 ```
@@ -22,7 +22,7 @@ further info about the RGB values.
 When the output is a C include file, it is wrapped and `ifdef` block with a
 `LOCAL` define to specify when the data is extern or not.
 
-```
+```C
 /* in the file including the data */
 #define LOCAL
 #include "sprites.h"
@@ -53,7 +53,7 @@ end result is 4 frames (2 for each color).
 
 Converts a RGB PNG image to a MSX Screen 2 tileset.
 
-There's a limit in 256 tiles.
+The output is limited to 256 tiles.
 
 ## png2scr
 
