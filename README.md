@@ -10,7 +10,7 @@ Convert PNG images into sprites and tilesets to be used by the MSX in screen 2 m
 
 Each tool has help in the `CLI` with `-h`.
 
-The output is dumped in `stdout`, so you can redirect it to a file:
+The output is dumped to `stdout`, so you can redirect it to a file:
 ```
 ./png2sprites.py examples/sprites.png > sprites.h
 ```
