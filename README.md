@@ -46,8 +46,8 @@ same syntax.
 Converts a RGB PNG image to MSX Screen 2 16x16 pixels sprite data.
 
 RGB(28, 28, 28) is used for transparent and any other colour will be expanded
-to its own sprite. See the example: it has two frames with two colors and the
-end result is 4 frames (2 for each color).
+to its own sprite. See the example: it has two frames with two colours and the
+end result is 4 frames (2 for each colour).
 
 ## png2tiles
 
